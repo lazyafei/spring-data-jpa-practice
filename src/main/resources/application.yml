@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    #active: local
+    active: 100
+    #active: company2
+#    active: dameng
+    #active: devB
+    #active: 1123
+
+
+

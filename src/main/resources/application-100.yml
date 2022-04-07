@@ -1,0 +1,35 @@
+
+#设置tomcat端口
+server:
+  port: 6666
+#  tomcat:
+#    basedir: /app/tmp
+
+
+#数据库及redis相关配置
+practice:
+  datasource:
+    driver-class-name: com.oscar.Driver
+    initial-size: 1
+    max-active: 5
+    maximum-pool-size: 10
+    pword: 'qwert'
+    url: jdbc:oscar://192.168.0.100:2003/OSRDB?useSSL=false&rewriteBatchedStatements=TRUE
+    username: practice
+
+#====================Spring配置==========================
+spring:
+  #配置JPA
+  jpa:
+    database: ORACLE
+    hibernate:
+      naming_strategy: org.hibernate.cfg.DefaultNamingStrategy
+    properties:
+      hibernate:
+        format_sql: false
+        jdbc:
+          batch_size: 1000
+          batch_versioned_data: true
+        order_inserts: true
+        order_updates: true
+        show_sql: true
