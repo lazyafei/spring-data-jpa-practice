@@ -26,7 +26,6 @@ public class BatchSaveRepositoryImpl<T,ID extends Serializable> extends SimpleJp
 
     //每个线程分的数据量
     private final Integer BATCH_SIZE = 1500;
-
     //最大线程数（建议最大电脑核心数*2）
     private final Integer MAX_THREAD = 4;
 

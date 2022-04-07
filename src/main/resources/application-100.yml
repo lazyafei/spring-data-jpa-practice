@@ -1,7 +1,7 @@
 
 #设置tomcat端口
 server:
-  port: 6666
+  port: 8081
 #  tomcat:
 #    basedir: /app/tmp
 

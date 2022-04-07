@@ -7,9 +7,7 @@ import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 
-/**
- * @author wangtuo
- */
+
 @Data
 @ToString(exclude = {"users","relationships"})
 @Entity
